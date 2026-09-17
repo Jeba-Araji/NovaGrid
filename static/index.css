@@ -1,0 +1,418 @@
+
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f8fc;
+            color: #172b4d;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            background: white;
+            border-bottom: 1px solid #e4ebf4;
+        }
+
+        .navbar {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            color: #123b78;
+        }
+
+        .logo span {
+            color: #08a6b7;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: #52627c;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #08a6b7;
+        }
+
+        .nav-btn {
+            background: #123b78;
+            color: white;
+            padding: 11px 18px;
+            border-radius: 7px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .nav-btn:hover {
+            background: #08a6b7;
+        }
+
+        /* HERO */
+
+        .hero {
+            background: linear-gradient(120deg, #eaf4ff, #e9fbfc);
+            padding: 70px 0;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .tag {
+            display: inline-block;
+            color: #07889a;
+            background: #d9f5f6;
+            padding: 8px 13px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: 46px;
+            line-height: 1.15;
+            color: #123b78;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #08a6b7;
+        }
+
+        .hero p {
+            color: #61718a;
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 20px;
+            border-radius: 7px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #123b78;
+            color: white;
+        }
+
+        .primary:hover {
+            background: #08a6b7;
+        }
+
+        .secondary {
+            background: white;
+            color: #123b78;
+            border: 1px solid #d4e2f2;
+        }
+
+        .secondary:hover {
+            border-color: #08a6b7;
+            color: #08a6b7;
+        }
+
+        /* HERO CARD */
+
+        .hero-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(20, 60, 110, 0.10);
+        }
+
+        .hero-card h3 {
+            color: #123b78;
+            margin-bottom: 7px;
+        }
+
+        .hero-card p {
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .card-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #f4f8fc;
+            padding: 14px;
+            border-radius: 9px;
+            margin-bottom: 12px;
+        }
+
+        .icon {
+            width: 38px;
+            height: 38px;
+            display: grid;
+            place-items: center;
+            background: #dff5f8;
+            border-radius: 9px;
+            font-size: 19px;
+        }
+
+        .card-item strong {
+            display: block;
+            font-size: 13px;
+            color: #213e6b;
+        }
+
+        .card-item small {
+            color: #7b8ba3;
+            font-size: 11px;
+        }
+
+        /* SECTIONS */
+
+        .section {
+            padding: 65px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 30px;
+            color: #123b78;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: #71819a;
+            font-size: 14px;
+        }
+
+        /* FEATURES */
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .feature {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #e3ebf5;
+            transition: 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(20, 60, 110, 0.08);
+        }
+
+        .feature .icon {
+            margin-bottom: 17px;
+        }
+
+        .feature h3 {
+            font-size: 17px;
+            color: #123b78;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #71819a;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        /* HOW IT WORKS */
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .step {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid #e3ebf5;
+            text-align: center;
+        }
+
+        .step-number {
+            background: #123b78;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            margin: 0 auto 17px;
+            font-weight: bold;
+        }
+
+        .step h3 {
+            font-size: 16px;
+            color: #123b78;
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            font-size: 13px;
+            color: #71819a;
+            line-height: 1.7;
+        }
+
+        /* ABOUT */
+
+        .about {
+            background: #eaf4ff;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 650px;
+            margin: auto;
+            color: #61718a;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #123b78;
+            color: white;
+            padding: 28px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+        }
+
+        footer h3 {
+            font-size: 20px;
+        }
+
+        footer span {
+            color: #6ee7f0;
+        }
+
+        footer p {
+            color: #c5d5ec;
+            font-size: 12px;
+            margin-top: 7px;
+        }
+
+        .footer-right {
+            text-align: right;
+            color: #c5d5ec;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 800px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .features,
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-right {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 450px) {
+
+            .container {
+                width: 92%;
+            }
+
+            .navbar {
+                height: 65px;
+            }
+
+            .logo {
+                font-size: 19px;
+            }
+
+            .nav-btn {
+                padding: 9px 12px;
+                font-size: 11px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            .hero {
+                padding: 45px 0;
+            }
+
+            .section {
+                padding: 45px 0;
+            }
+
+            .section-title h2 {
+                font-size: 26px;
+            }
+        }
