@@ -70,6 +70,9 @@ H1{
     width:500px;
     justify-content: center;
     justify-self: center;
-    background-color:rgb(216, 235, 183);
+    background-color:rgb(222, 226, 216);
     border-radius: 10px;
+    border-style:double;
+    align-content: center;
+    align-self: center;
 }
