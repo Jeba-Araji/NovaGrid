@@ -3,6 +3,9 @@ body {
     background: #f2f6ff;
     text-align: center;
     padding: 40px;
+    background-image: url(/static/file_00000000cb94820bbb4a2373f7b8ee08.png);
+    background-size: cover;
+
 }
 
 h1 {
