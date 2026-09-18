@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+</head>
+<body>
+    <link rel="stylesheet" href="/static/style.css">
+
+<h2>Student Dashboard</h2>
+
+<a href="/complaint">Submit Complaint</a>
+<a href="/logout">Logout</a>
+
+<h3>My Complaints</h3>
+
+{% for complaint in complaints %}
+
+<p>
+    <b>{{ complaint[2] }}</b><br>
+    {{ complaint[3] }}<br>
+    Status: {{ complaint[4] }}
+</p>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>

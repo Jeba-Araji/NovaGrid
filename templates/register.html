@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h2>Admin Login</h2>
+    <div class="care">
+    <h2>Student Register</h2>
 
 <form method="POST">
+    <input name="name" placeholder="Name" required><br><br>
 
-    <input name="email"
-           placeholder="Admin email" required><br><br>
+    <input name="email" placeholder="Email" required><br><br>
 
-    <input type="password"
-           name="password"
+    <input type="password" name="password"
            placeholder="Password" required><br><br>
 
-    <button>Login</button>
-
+    <button>Register</button>
 </form>
+
+<a href="/login">Already registered? Login</a>
+    </div>
 </body>
 </html>
