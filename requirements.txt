@@ -1,0 +1,7 @@
+Technology Stack :-
+HTML
+CSS
+Python
+Flask
+SQLite
+Git & GitHub
